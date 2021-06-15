@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Dashboard.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add stocks</title>
+</head>
+<body>
+    <section id="sidebar">
+		<section class="title-container">
+			<img src="logot.png" width="38px" alt="logo" />
+			<h1>Stock Shop</h1>
+		</section>
+		<section class="links-container">
+			<div class="links">
+				<div class="icon">
+					<a href="Dashboard.html"><i class="fas fa-home"></i></a>
+				</div>
+				<a href="Dashboard.html">Home</a>
+			</div>
+			<div class="links">
+				<div class="icon">
+					<a href="Dashboardadd.html"><i class="fas fa-cart-plus"></i></a>
+				</div>
+				<a href="Dashboardadd.html">Add stock</a>
+			</div>
+			<div class="links">
+				<div class="icon">
+					<a href="Dashboardview.html"><i class="fas fa-list-alt"></i></a>
+				</div>
+				<a href="Dashboardview.html">Stocks available</a>
+			</div>
+			<div class="links">
+				<div class="icon">
+				<a href="Dashboardsales.html"><i class="fas fa-clipboard-check"></i></a>
+				</div>
+				<a href="Dashboardsales.html">Sales</a>
+			</div>
+		</section>
+	</section>
+    <section id="main-dashboard-content">
+        <section id="top-section">
+            <h2 id="welcome-title">Add your stocks here...</h2>
+            <p id="mandatory-field">* These are mandatory fields</p>
+        </section>
+        <form action="Dashboardview.html">
+            <section id="grid-container-add">
+            <div class="input-grid">
+                <label for="stock name">Stock name*</label>
+                <div class="input-box">
+                <input type="text" placeholder="stock name..">
+                </div>
+                <label class="err-lbl" style="visibility: visible;">Stock name is required</label>
+            </div>
+            <div class="input-grid">
+                <label for="stock name">Quantity*</label>
+                <div class="input-box">
+                <input type="text" placeholder="quantity...">
+                </div>
+                <label class="err-lbl" style="visibility: hidden;">Quantity is required</label>
+            </div>
+            <div class="input-grid">
+                <label for="stock name">Stock name</label>
+                <div class="input-box">
+                <input type="text" placeholder="stock name..">
+                </div>
+                <label style="visibility: hidden;">Stock name is required</label>
+            </div>
+            <div class="input-grid">
+                <label for="stock name">Stock name</label>
+                <div class="input-box">
+                <input type="text" placeholder="stock name..">
+                </div>
+                <label style="visibility: hidden;">Stock name is required</label>
+            </div>
+            <div class="input-grid">
+                <label for="stock name">Stock name</label>
+                <div class="input-box">
+                <input type="text" placeholder="stock name..">
+                </div>
+                <label style="visibility: hidden;">Stock name is required</label>
+            </div>
+            <div class="input-grid">
+                <label for="stock name">Stock name</label>
+                <div class="input-box">
+                <input type="text" placeholder="stock name..">
+                </div>
+                <label style="visibility: hidden;">Stock name is required</label>
+            </div>
+            <div class="buttons-form">
+                <div class="button">
+                    <input type="submit" name="sybmit" id="" value="Submit">
+                </div>
+            </div>
+        </section>
+    </form>
+    </section>
+</body>
+</html>
