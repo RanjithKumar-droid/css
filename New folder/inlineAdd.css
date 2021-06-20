@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2B3856;
+}
+ul{
+    background: #27324b;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+li{
+    float: left;
+    list-style: none;
+}
+li a{
+    color: rgba(248, 245, 245, 0.849);
+    text-decoration: none !important;
+    display: block;
+    padding: 20px;
+}
+li a:hover{
+   color: white;
+}
+.headingH{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Helsinki', sans-serif;
+}

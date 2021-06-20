@@ -1,0 +1,38 @@
+body{
+	background-image: url("back.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+h2{
+	text-align: center;
+	color: white;
+}
+#text{
+	color: tomato;
+	border: 2px dotted white;
+	border-radius: 5px;
+}
+#bg{
+	background-color: dodgerblue;
+	color: white;
+}
+div{
+	width: 300px;
+	height: 200px;
+	background-image: url('width.jpg');
+	color: white;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+	border: 2px dashed goldenrod;
+}
+#bod-col{
+	border-style: solid;
+	border-color: red blue yellow lawngreen;
+}
+input:focus{
+	outline-color: red;
+	box-shadow: red;
+}

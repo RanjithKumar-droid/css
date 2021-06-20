@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link href="http://fonts.cdnfonts.com/css/mate-sc" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/celesta" rel="stylesheet">
+                
+    <link rel="stylesheet" href="sales.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="#" onclick="bg()" id="home">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="#">FAQ</a></li>
+    </ul>
+
+    <div class="split left">
+        <h2 id="addstk">Add stock</h2>
+        <div class="center slider">
+            <input type="text" placeholder="Name" class="inp">
+            <input type="text" placeholder="Age" class="inp">
+            <input type="text" placeholder="Gender" class="inp">
+            <input type="text" placeholder="Address" class="inp">
+            <input type="submit"  class="submit">
+            <input type="reset" class="reset">
+        </div>
+    </div>
+    <div class="split right">
+        <div class="center header">
+            <h2 id="heading">STOCK SHOP</h2>
+            <p>Welcome to stock shop</p>
+            <div class="butt">
+                <a href="#">Add stock</a><a href="#" id="btn">stock available</a>
+            </div>
+        </div>
+       
+    </div>
+</body>
+<script type="text/javascript">
+   function bg(){
+       document.getElementById("home").style.background="white";
+       document.getElementById("home").style.color="black"
+    }
+</script>
+
+</html>

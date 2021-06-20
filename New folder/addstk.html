@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stkmanage.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>copy stock shop</title>
+</head>
+
+<body>
+    <nav class="navbar-fixed-top">
+        <ul>
+            <li><a href="stockManagement.html">Home</a></li>
+            <li class="active"><a href="addstk.html">Add stock</a></li>
+            <li><a href="viewstk.html">Stocks available</a></li>
+        </ul>
+        </div>
+
+        <h3 class="headingH">Add stock</h3>
+        
+        <div class="container">
+            
+            <form id="formid" name="form" action="viewstk.html" method="GET" class="form-group" autocomplete="off"
+                onsubmit="return validate();">
+
+                <label for="category">Category*</label>
+                <select id="category" name="categories" class="form-control">
+                    <option value="" selected disabled>Select category</option>
+                    <option value="Food">Food</option>
+                    <option value="Stationary">Stationary</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Cosmetics">Cosmetics</option>
+                    <option value="Medicine">Medicine</option>
+                    <option value="Others">Others</option>
+                </select><br>
+
+                <label for="stkname">Stock name*</label>
+                <input type="text" id="stkname" placeholder="Stock name" class="form-control" minlength="1"
+                    name="stkname">
+                <label id="lblStk" class="labels" style="font-size: 13px; display: none;">Stock name is
+                    required</label>
+
+                <label for="qty">Quantity*</label>
+                <input type="number" id="qty" placeholder="Quantity" min="1" class="form-control" name="quantity">
+                <label id="lblQty" class="labels" style="font-size: 13px;display: none;">Quantity is invalid</label>
+
+                <label for="baseprice">Base price*</label>
+                <input type="number" id="baseprice" placeholder="Base price" min="1" class="form-control"
+                    name="baseprice">
+                <label id="lblBp" class="labels" style="font-size: 13px; display: none;">Base price is
+                    invalid</label>
+
+                <label for="profit">Profit/Qty*</label>
+                <input type="number" id="profit" placeholder="profit" min="1" class="form-control" name="profit">
+                <label id="lblPft" class="labels" style="font-size: 13px; display: none;">Profit/Qty is
+                    invalid</label>
+
+                <label for="expDate">Expiry date</label>
+                <input type="date" id="expDate" placeholder="Expiry date" class="form-control" name="date">
+                <label id="lblDate" class="labels" style="font-size: 13px; display: none;">Expiry date is
+                    required</label>
+
+                <input type="submit" value="Submit" id="sub" class="btn btn-success" onclick="method()">
+                <input class="btn btn-primary" type="Reset" value="Reset" id="rst" onclick="Reset()">
+            </form>
+        </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="validation.js"></script>
+
+</html>

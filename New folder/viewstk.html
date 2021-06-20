@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="stkmanage.css">
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+  <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+    href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables.css">
+  <link rel="stylesheet" type="text/css"
+    href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables_themeroller.css">
+
+  <script type="text/javascript" charset="utf8"
+    src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" charset="utf8"
+    src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/jquery.dataTables.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Stock shop</title>
+</head>
+
+<body>
+  <div id="myDiv">
+    <ul>
+      <li><a href="stockManagement.html">Home</a></li>
+      <li><a href="addstk.html">Add stock</a></li>
+      <li class="active"><a href="viewstk.html">Stocks available</a></li>
+    </ul>
+  </div>
+  <h3 class="headingH">Stocks available</h3>
+
+  <div class="tablepadd">
+    <label for="category" style="font-size: 20px;">Category:</label>
+    <select id="category" name="categories">
+      <option value="All" selected="">All</option>
+      <option value="Food">Food</option>
+      <option value="Stationary">Stationary</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Cosmetics">Cosmetics</option>
+      <option value="Others">Others</option>
+    </select>
+    <!-- <input type="text" id="search" placeholder="Search..."> -->
+    <table class="table" id="tablelist">
+      <thead>
+        <tr>
+          <th scope="col">S.no</th>
+          <th scope="col">Category</th>
+          <th scope="col">Stock name</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Base price/Qty</th>
+          <th scope="col">Selling price/Qty</th>
+          <th scope="col">Profit/Qty</th>
+          <th scope="col">Expiry date</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Food</td>
+          <td>Saffron</td>
+          <td>20</td>
+          <td>50</td>
+          <td>57</td>
+          <td>15</td>
+          <td>2022-09-22</td>
+          <td><i class="fas fa-bars"></i></td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Stationary</td>
+          <td>Glue</td>
+          <td>15</td>
+          <td>8</td>
+          <td>10</td>
+          <td>17</td>
+          <td>2023-08-13</td>
+          <td><i class="fas fa-bars"></i></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Medicine</td>
+          <td>Tablet</td>
+          <td>80</td>
+          <td>5</td>
+          <td>8</td>
+          <td>60</td>
+          <td>2025-03-19</td>
+          <td><i class="fas fa-bars"></i></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Food</td>
+          <td>Maggie</td>
+          <td>23</td>
+          <td>20</td>
+          <td>25</td>
+          <td>5</td>
+          <td>2023-03-05</td>
+          <td><i class="fas fa-bars"></i></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Electronics</td>
+          <td>Laptop</td>
+          <td>10</td>
+          <td>45000</td>
+          <td>55000</td>
+          <td>22</td>
+          <td>Null</td>
+          <td><i class="fas fa-bars"></i></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Cosmetics</td>
+          <td>Eye shadow</td>
+          <td>10</td>
+          <td>250</td>
+          <td>280</td>
+          <td>22</td>
+          <td>2030-06-30</td>
+          <td><i class="fas fa-bars"></i></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Cosmetics</td>
+          <td>Maskara</td>
+          <td>7</td>
+          <td>200</td>
+          <td>240</td>
+          <td>16</td>
+          <td>2030-12-13</td>
+          <td><i class="fas fa-bars"></i></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Electronics</td>
+          <td>Mobile</td>
+          <td>8</td>
+          <td>12000</td>
+          <td>16000</td>
+          <td>33</td>
+          <td>Null</td>
+          <td><i class="fas fa-bars"></i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="contextMenu">
+    <a href="addstk.html" onclick="edits()">Edit</a>
+    <a href="sales.html">Sales</a>
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    $('#tablelist').DataTable({
+      pagelength: 2
+    });
+  });
+
+  // category
+  $("#category").on("change", function () {
+    var value = $(this).val().toUpperCase();
+  
+    $("tbody tr").each(function () {
+      var row = $(this);  			      	    // contains all rows
+      var id = row.find("td:eq(1)").text().toUpperCase(); // all the values of second td
+      if (value == "ALL") {
+        row.show();
+      }
+      else if (id.indexOf(value) !== 0) {
+        row.hide();
+      } else {
+        row.show();
+      }
+    });
+  });
+
+  // search 
+  // $(document).ready(function () {
+  //   $("#search").on("keyup", function () {
+  //     var value = $(this).val().toLowerCase();
+  //     var rowss = $("tbody tr");
+  //     console.log(rowss);
+  //     $("tbody tr").filter(function () {
+  //       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+  //     })
+  //   });
+  // });
+
+  // context menu
+   $contextMenu = $("#contextMenu");
+
+  $("table").on("click", "tr i", function (e) {
+    $contextMenu.css({
+      display: "block",
+      left: e.pageX,
+      top: e.pageY
+    });
+    return false;
+  });
+  $("body").on("click", function () {
+    $contextMenu.hide();
+  });
+</script>
+
+</html>

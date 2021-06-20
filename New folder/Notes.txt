@@ -1,0 +1,4 @@
+Abstract class:
+            If we want users to dont create an object of a specoific class, then make the class as abstract.
+position: absolute
+            it is used to fix a element wherever in page.

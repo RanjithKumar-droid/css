@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    
+    background: rgb(63, 31, 240);
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px;
+}
+li a:hover{
+    background: white;
+    color: black;
+}
+.split{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+   
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#addstk{
+    position: relative;
+    top: 20%;
+    left:40%;
+}
+@keyframes slider {
+    0%{
+        left: 0;
+    }  
+    20%{
+        left: 0;
+    }     
+    25%{
+        left: -100;
+    }     
+    45%{
+        left: -100;
+     }/*
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300px;
+    } */
+}
+.slider{
+ overflow: hidden;
+}
+#heading{
+    font-size: 35px;
+    letter-spacing: 8px;
+    font-family: 'Mate SC', sans-serif;
+                                                
+}
+.header p{
+    font-size: 15px;
+    letter-spacing: 6px;
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+                                                
+}
+.header{
+    top: 40%;
+   text-align: center;
+   
+}
+.butt{
+    position: relative;
+    top: 90px;
+    width: 300px;
+    right: inherit;
+}
+ .butt a{
+    background: rgb(93, 10, 248);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#btn{
+    margin-left: 20px;
+}
+.inp{
+    display: block;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(127, 86, 240);
+    padding-left: 10px;
+    border-left: 5px solid rgb(127, 86, 240);
+}
+.submit{
+    background: transparent;
+    width: 80px;
+    border: 1px solid #561df3;
+    height: 22px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.reset{
+    background: transparent;
+    width: 80px;
+    border: 1px solid rgb(86, 29, 243);
+    height: 22px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.submit:hover,.reset:hover{
+    /* background: rgb(86, 29, 243); */
+    border: 1px solid #4402fc;
+    color: black;
+    opacity: 1;
+    transform: scale(1);
+}
+.inp:focus{
+    outline: none;
+    border-bottom: 2px solid #4806ff;
+    border-left: 10px solid #4806ff;
+}
