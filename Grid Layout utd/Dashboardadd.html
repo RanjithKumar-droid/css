@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Dashboard.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add stocks</title>
+</head>
+<body>
+    <section id="sidebar">
+		<section class="title-container">
+			<img src="logot.png" width="38px" alt="logo" />
+			<h1>Stock Shop</h1>
+		</section>
+		<section class="links-container">
+			<div class="links">
+				<div class="icon">
+					<a href="Dashboard.html"><i class="fas fa-home"></i></a>
+				</div>
+				<a href="Dashboard.html">Home</a>
+			</div>
+			<div class="links">
+				<div class="icon">
+					<a href="Dashboardadd.html"><i class="fas fa-cart-plus"></i></a>
+				</div>
+				<a href="Dashboardadd.html">Add stock</a>
+			</div>
+			<div class="links">
+				<div class="icon">
+					<a href="Dashboardview.html"><i class="fas fa-list-alt"></i></a>
+				</div>
+				<a href="Dashboardview.html">Stocks available</a>
+			</div>
+			<div class="links">
+				<div class="icon">
+				<a href="Dashboardsales.html"><i class="fas fa-clipboard-check"></i></a>
+				</div>
+				<a href="Dashboardsales.html">Sales</a>
+			</div>
+		</section>
+	</section>
+    <section id="main-dashboard-content">
+        <section id="top-section">
+            <h2 id="welcome-title">Add stocks...</h2>
+            <p id="mandatory-field">* These are mandatory fields</p>
+        </section>
+        <form action="Dashboardview.html" method="GET" id="formid" name="form"  onsubmit="return validate();"  autocomplete="off">
+            <section id="grid-container-add">
+                <div class="input-grid">
+                    <label for="stock name">Category*</label>
+                    <div class="input-box">
+                        <select name="categories" id="category" class="in">
+                            <option value="select category" selected disabled="">Select category</option>
+                            <option value="Food">Food</option>
+                            <option value="Electronics">Electronics</option>
+                            <option value="Cosmetics">Cosmetics</option>
+                            <option value="Stationary">Stationary</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <label class="err-lbl" id="lblcat" style="visibility: hidden;">Category is required</label>
+                </div>
+            <div class="input-grid">
+                <label for="stkname">Stock name*</label>
+                <div class="input-box">
+                <input type="text" name="stkname" placeholder="stock name.." class="in" id="stkname">
+                </div>
+                <label class="err-lbl" id="lblStk" style="visibility: hidden;">Stock name is required</label>
+            </div>
+            <div class="input-grid">
+                <label for="quantity">Quantity*</label>
+                <div class="input-box">
+                <input type="number" id="quantity" name="quantity" placeholder="quantity..." min="1" class="in">
+                </div>
+                <label class="err-lbl" id="lblQty" style="visibility: hidden;">Quantity is required</label>
+            </div>
+            <div class="input-grid">
+                <label for="baseprice">Base price*</label>
+                <div class="input-box">
+                <input type="number" name="baseprice" id="baseprice" placeholder="Base price.." min="1" class="in">
+                </div>
+                <label style="visibility: hidden;" id="lblBp">Base price is required</label>
+            </div>
+            <div class="input-grid">
+                <label for="profit">Profit/Qty*</label>
+                <div class="input-box">
+                <input type="number" name="profit" id="profit" placeholder="Profit.." min="1" class="in">
+                </div>
+                <label style="visibility: hidden;" id="lblPft">Profit is required</label>
+            </div>
+            <div class="input-grid">
+                <label for="date">Expiry date</label>
+                <div class="input-box">
+                <input type="date" name="date" placeholder="Date.." class="in" id="date">
+                </div>
+                <label style="visibility: hidden;" id="lblDate">Expiry date is required</label>
+            </div>
+            <div class="buttons-form">
+                <div class="button">
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </div>
+                <div class="button">
+                    <input type="reset" name="reset" id="reset" value="Reset" onclick="Reset()">
+                </div>
+            </div>
+        </section>
+    </form>
+    </section>
+</body>
+<script type="text/javascript" src="grid.js"></script>
+<!-- <script>
+var stockname = document.getElementById("stockname");
+console.log(stockname.value);
+
+function validate() {
+
+if (stockname.value == "") {                // this will be modified
+  stkname.style.border = "1px solid red";
+  stkname.style.boxShadow = " 0 0 5px red";
+  stkname_err.style.visibility = "visible";
+  stkname_err.style.color = "red";
+  // stkname.focus();
+  return false;
+}
+}
+</script> -->
+</html>
